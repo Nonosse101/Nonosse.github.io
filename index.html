@@ -1,96 +1,58 @@
 <!doctype html>
-<!-- Déclare que le document utilise la version moderne de HTML. -->
-<!-- Balise racine du document ; lang indique aux navigateurs et lecteurs d'écran que le contenu est en français. -->
 <html lang="fr">
-  <!-- Contient les informations de configuration, non affichées dans la page. -->
   <head>
-    <!-- meta configure la page ; charset="utf-8" permet d'afficher les accents. -->
     <meta charset="utf-8" />
-    <!-- meta viewport adapte l'échelle et la largeur de la page aux écrans mobiles. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- title définit le texte affiché dans l'onglet et les résultats de recherche. -->
     <title>Waterrush Federation</title>
-    <!-- link relie cette page à sa feuille de style ; rel indique son rôle et href son chemin. -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- link relie l'icône de l'onglet ; type précise le format et href le fichier image. -->
     <link rel="icon" type="image/x-icon" href="logo.png" />
   </head>
 
-  <!-- body contient tout le contenu visible ; class="accueil" permet de cibler cette page en CSS. -->
   <body class="accueil">
-    <!-- header définit l'en-tête de la page, avec le logo, le titre et la navigation. -->
     <header class="header">
-      <!-- img affiche le logo ; src indique le fichier, alt fournit une description, class permet le style CSS. -->
       <img src="logo.png" alt="Logo" class="logo" />
-      <!-- h1 est le titre principal de la page ; il ne devrait généralement y en avoir qu'un. -->
       <h1>Fédération Française de Water Rush</h1>
-      <!-- nav regroupe les liens de navigation ; class permet de les mettre en forme en CSS. -->
       <nav class="nav-links">
-        <!-- a crée un lien ; href indique sa destination et class applique le style de bouton. -->
         <a href="Presentation.html" class="btn">Présentation</a>
-        <!-- Ce lien ouvre la page de la fédération. -->
         <a href="Federation.html" class="btn">Fédération</a>
-        <!-- Ce lien ouvre la page de contact. -->
         <a href="contact.html" class="btn">Contact</a>
       </nav>
     </header>
 
-    <!-- main contient le contenu principal, propre à cette page. -->
     <main>
-      <!-- section regroupe le sujet des actualités ; class permet de cibler cette zone en CSS. -->
       <section class="actualites">
-        <!-- h2 est le titre d'une section, hiérarchiquement inférieur au h1. -->
         <h2>Actualités</h2>
 
-        <!-- div est un conteneur générique ; cette classe regroupe et organise les cartes. -->
         <div class="actualites-container">
-          <!-- article représente un contenu autonome : une carte d'actualité. -->
           <article class="actualite">
-            <!-- img affiche l'image de l'actualité ; src donne le fichier et alt sa description textuelle. -->
             <img src="free.png" alt="Actualité 1" />
-            <!-- h3 est le titre de cette actualité, de niveau inférieur au titre de section. -->
             <h3>Nouvelle compétition</h3>
-            <!-- p affiche le texte descriptif sous le titre. -->
             <p>Le 24 novembre au Vernet</p>
           </article>
 
-          <!-- Deuxième article autonome, présentant une autre actualité. -->
           <article class="actualite">
-            <!-- Image de cette actualité ; alt sert de texte de remplacement accessible. -->
             <img src="Noah.jpg" alt="Actualité 2" />
-            <!-- Titre de la deuxième actualité. -->
             <h3>Champion de France</h3>
-            <!-- Description de la deuxième actualité. -->
             <p>Noah Terrinha est déclaré champion de France.</p>
           </article>
 
-          <!-- Troisième article autonome ; son contenu de démonstration peut être remplacé. -->
           <article class="actualite">
-            <!-- Image de la carte ; src est le chemin du fichier et alt sa description. -->
             <img src="logo.png" alt="Actualité 3" />
-            <!-- Titre de la troisième actualité. -->
             <h3>Actualité 3</h3>
-            <!-- Texte de présentation de la troisième actualité. -->
             <p>Texte de mon actualité.</p>
           </article>
         </div>
       </section>
 
-      <!-- section regroupe le lecteur vidéo dans une zone identifiable par le CSS. -->
       <section class="video">
-        <!-- video intègre un lecteur ; width/height donnent ses dimensions et controls affiche les commandes. -->
         <video width="500" height="400" controls>
-          <!-- source indique le fichier vidéo et son type MIME au navigateur. -->
           <source src="exemple-video.mp4" type="video/mp4" />
-          <!-- Ce texte de remplacement s'affiche si le navigateur ne prend pas en charge video. -->
           Votre navigateur ne supporte pas la lecture de vidéos.
         </video>
       </section>
     </main>
 
-    <!-- footer contient les informations de bas de page, ici la signature du site. -->
     <footer>
-      <!-- p affiche un paragraphe dans le pied de page. -->
       <p>site crée par FFWR</p>
     </footer>
   </body>
