@@ -1,70 +1,114 @@
 <!doctype html>
+<!-- Déclare que le document utilise la version moderne de HTML. -->
+<!-- Balise racine du document ; lang indique aux navigateurs et lecteurs d'écran que le contenu est en français. -->
 <html lang="fr">
+  <!-- Contient les informations de configuration, non affichées dans la page. -->
   <head>
+    <!-- meta configure la page ; charset="utf-8" permet d'afficher les accents. -->
     <meta charset="utf-8" />
+    <!-- meta viewport adapte l'échelle et la largeur de la page aux écrans mobiles. -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- title définit le texte affiché dans l'onglet du navigateur. -->
     <title>Waterrush Federation</title>
+    <!-- link relie la feuille de style ; rel décrit sa fonction et href son chemin. -->
     <link rel="stylesheet" href="style_contact.css" />
+    <!-- link relie l'icône de l'onglet ; type précise son format et href le fichier image. -->
     <link rel="icon" type="image/x-icon" href="logo.png" />
   </head>
 
+  <!-- body contient tout le contenu visible de la page. -->
   <body>
+    <!-- header définit l'en-tête de page. -->
     <header class="header">
+      <!-- img affiche le logo ; src indique le fichier, alt sa description et class son style CSS. -->
       <img src="logo.png" alt="Logo" class="logo">
+      <!-- h1 est le titre principal de la page. -->
       <h1>Fédération Française de Water Rush</h1>
+      <!-- div regroupe les liens de navigation ; class sert à leur mise en forme CSS. -->
       <div class="nav-links">
+        <!-- a crée un lien ; href donne sa destination et class applique le style de bouton. -->
         <a href="index.html" class="btn">Accueil</a>
+        <!-- Lien vers la présentation de l'épreuve. -->
         <a href="Presentation.html" class="btn">Presentation</a>
+        <!-- Lien vers la page de la fédération. -->
         <a href="Federation.html" class="btn">Fédération</a>
       </div>
     </header>
 
+    <!-- main contient le contenu principal de la page de contact. -->
     <main class="page-contact">
+      <!-- section regroupe le titre et les coordonnées ; class permet de la cibler en CSS. -->
       <section class="contact">
+        <!-- h1 indique le titre principal de la section de contact. -->
         <h1>Contactez-nous</h1>
+        <!-- p affiche le texte d'introduction sous forme de paragraphe. -->
         <p>
           Une question, une demande ou besoin d'informations.
           N'hésitez pas à nous contacter.
         </p>
 
+        <!-- div regroupe une coordonnée dans un conteneur de présentation. -->
         <div class="info">
+          <!-- strong met en évidence le nom du moyen de contact. -->
           <strong>📧 Email</strong>
+          <!-- p affiche l'adresse électronique dans son propre paragraphe. -->
           <p>contact@waterrush.fr</p>
         </div>
 
+        <!-- Autre div regroupant le numéro de téléphone. -->
         <div class="info">
+          <!-- strong met en évidence le type de coordonnée. -->
           <strong>📱 Téléphone</strong>
+          <!-- p affiche le numéro de téléphone. -->
           <p>06 06 06 06 06</p>
         </div>
 
+        <!-- Autre div regroupant l'adresse postale. -->
         <div class="info">
+          <!-- strong met en évidence le type de coordonnée. -->
           <strong>📍 Adresse</strong>
+          <!-- p affiche l'adresse postale. -->
           <p>1 Rue Henri Simon, 63000 Clermont-Ferrand</p>
         </div>
       </section>
 
+      <!-- form regroupe les champs ; action indique la destination et method la méthode d'envoi. -->
       <form action="" method="post">
+        <!-- ul regroupe les lignes du formulaire dans une liste sans ordre particulier. -->
         <ul>
+          <!-- li regroupe le libellé et le champ pour le nom. -->
           <li>
+            <!-- label décrit le champ ; for doit correspondre à l'id du champ associé. -->
             <label for="name">Nom&nbsp;:</label>
+            <!-- input crée un champ texte ; id relie le label, name nomme la donnée envoyée, required impose une saisie. -->
             <input type="text" id="name" name="user_name" required />
           </li>
+          <!-- li regroupe le libellé et le champ pour l'adresse électronique. -->
           <li>
+            <!-- label identifie le champ d'adresse e-mail grâce à son attribut for. -->
             <label for="mail">E-mail&nbsp;:</label>
+            <!-- input type="email" crée un champ e-mail ; id relie le label, name nomme la donnée, required la rend obligatoire. -->
             <input type="email" id="mail" name="user_email" required />
           </li>
+          <!-- li regroupe le libellé et la zone de saisie du message. -->
           <li>
+            <!-- label décrit la zone de texte grâce à la correspondance entre for et id. -->
             <label for="msg">Message&nbsp;:</label>
+            <!-- textarea crée une zone de texte multiligne ; name identifie la donnée envoyée et required la rend obligatoire. -->
             <textarea id="msg" name="user_message" required></textarea>
           </li>
+          <!-- li regroupe le bouton d'envoi ; class permet de le positionner en CSS. -->
           <li class="button">
+            <!-- button type="submit" envoie les champs du formulaire. -->
             <button type="submit">Envoyer</button>
           </li>
         </ul>
       </form>
     </main>
 
+    <!-- footer contient les informations affichées en bas de page. -->
     <footer>
+      <!-- p affiche la signature du site sous forme de paragraphe. -->
       <p>site crée par FFWR</p>
     </footer>
   </body>
