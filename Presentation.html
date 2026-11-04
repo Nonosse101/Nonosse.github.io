@@ -1,46 +1,173 @@
 <!doctype html>
+<!-- Déclare que le document utilise la version moderne de HTML. -->
+<!-- Balise racine du document ; lang indique aux navigateurs et lecteurs d'écran que le contenu est en français. -->
 <html lang="fr">
+  <!-- Contient les informations de configuration, non affichées dans la page. -->
   <head>
+    <!-- meta configure la page ; charset="utf-8" permet d'afficher les accents. -->
     <meta charset="utf-8" />
-    <title>Waterrush Federation</title>
+    <!-- meta viewport adapte l'échelle et la largeur de la page aux écrans mobiles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- title définit le texte affiché dans l'onglet et les résultats de recherche. -->
+    <title>Waterfall – Fédération Française de Water Rush</title>
+    <!-- link relie la feuille de style ; rel décrit la relation et href donne son chemin. -->
     <link rel="stylesheet" href="style-prensentations.css" />
-    <link rel="icon" type="image/x-icon" href="1.png">
+    <!-- link relie l'icône de l'onglet ; type précise son format et href son fichier. -->
+    <link rel="icon" type="image/x-icon" href="logo.png">
   </head>
-  
+
+  <!-- body contient tout le contenu visible de la page. -->
   <body>
-    <header class="header">  
-      <img src="1.png" alt="Logo" class="logo">
+    <!-- header définit l'en-tête de page. -->
+    <header class="header">
+      <!-- img affiche le logo ; src indique le fichier, alt sa description et class son style CSS. -->
+      <img src="logo.png" alt="Logo" class="logo">
+      <!-- h1 est le titre principal de la page. -->
       <h1>Fédération Française de Water Rush</h1>
+      <!-- div est un conteneur générique qui regroupe les liens de navigation. -->
       <div class="nav-links">
+        <!-- a crée un lien vers la page d'accueil ; href donne sa destination et class son style. -->
         <a href="index.html" class="btn">Accueil</a>
+        <!-- Lien vers la page de la fédération. -->
         <a href="Federation.html" class="btn">Fédération</a>
+        <!-- Lien vers la page de contact. -->
         <a href="contact.html" class="btn">Contact</a>
       </div>
     </header>
-    <body>
-      <div class="design">
-  
-  <!DOCTYPE html>
-<html>
-<head>
-    <style>
-        p {
-            text-align: center;
-        }
-    </style>
-</head>
-<body>
 
-    <p>No Split Just skills</p>
-    <p>Un sport unique au monde et français !</p>
+    <!-- main contient le contenu principal ; class permet de sélectionner cette zone en CSS. -->
+    <main class="design">
+      <!-- section regroupe le contenu consacré à la présentation de l'épreuve. -->
+      <section class="presentation">
+        <!-- div regroupe les blocs de la première colonne ; class indique leur mise en page CSS. -->
+        <div class="colonne">
+          <!-- div crée un bloc générique pour regrouper un sujet et ses explications. -->
+          <div class="bloc">
+            <!-- h1 présente le titre principal de l'épreuve. -->
+            <h1>WATERFALL</h1>
+            <!-- p forme un paragraphe expliquant le principe de l'épreuve. -->
+            <p>
+              Waterfall est une course individuelle de 200 mètres. Chaque participant joue le rôle
+              d’un serveur et transporte d’une seule main un plateau contenant plusieurs verres
+              remplis d’eau. L’objectif est de franchir l’arrivée avec le plus grand nombre de verres
+              encore valides, tout en réalisant le meilleur temps possible
+            </p>
 
-</body>
-</html>
+            <!-- h2 introduit un sous-titre à l'intérieur du bloc. -->
+            <h2>Départ</h2>
+            <!-- p décrit les règles du départ. -->
+            <p>
+              Le joueur commence avec 10 verres, tous remplis jusqu’à une ligne indiquée sur chaque
+              verre. Les verres sont disposés de manière identique pour tous les participants.
+              Le plateau doit être porté à une seule main, par-dessous. Dès le signal de départ,
+              le chronomètre commence
+            </p>
+          </div>
+          <!-- Second div : regroupe les règles de validité des verres. -->
+          <div class="bloc">
+            <!-- h2 annonce le sujet de la liste qui suit. -->
+            <h2>Un verre est considéré comme perdu si…</h2>
+            <!-- ul crée une liste non numérotée. -->
+            <ul>
+              <!-- li représente une règle individuelle de la liste. -->
+              <li>Il tombe du plateau, se renverse ou contient à l’arrivée moins de 50 % de la quantité d’eau initiale</li>
+              <!-- Autre règle individuelle de la liste. -->
+              <li>Un verre toujours debout mais ayant perdu un peu d’eau reste donc valable</li>
+            </ul>
+          </div>
+          <!-- Troisième div : regroupe les critères de classement. -->
+          <div class="bloc">
+            <!-- h2 annonce le sujet du bloc. -->
+            <h2>Classement</h2>
+            <!-- ul présente les critères sous forme de liste non numérotée. -->
+            <ul>
+              <!-- li indique le premier critère de classement. -->
+              <li>Le nombre de verres est prioritaire sur le temps</li>
+              <!-- li donne un exemple illustrant ce critère. -->
+              <li>Ainsi, un joueur terminant en 55 secondes avec 9 verres est classé devant un joueur terminant en 40 secondes avec 8 verres</li>
+              <!-- li décrit le départage lorsque le nombre de verres est identique. -->
+              <li>Entre deux joueurs ayant conservé le même nombre de verres, le meilleur temps gagne</li>
+              <!-- li présente le dilemme stratégique de l'épreuve. -->
+              <li>Le dilemme : prendre le risque d’accélérer pour gagner quelques secondes, au péril d’un verre ?</li>
+            </ul>
+          </div>
+        </div>
 
+        <!-- Deuxième div de colonne : contient les interdictions et les pénalités. -->
+        <div class="colonne">
+          <!-- div regroupe le bloc des interdictions. -->
+          <div class="bloc">
+            <!-- h2 nomme la rubrique des interdictions. -->
+            <h2>Interdictions</h2>
+            <!-- ul crée la liste des actions interdites ; class permet un style spécifique. -->
+            <ul class="interdictions">
+              <!-- Chaque li décrit une action interdite. -->
+              <li>❌ Chaussures de course ou chaussures fortement amortissantes</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ Tenir ou stabiliser le plateau avec les deux mains</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ S’arrêter volontairement pendant le parcours</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ Utiliser des gants antidérapants ou tout produit améliorant l’adhérence</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ Porter des bouchons d’oreilles ou un casque : le participant doit subir les distractions sonores du parcours</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ Toucher directement un verre pour le remettre en place</li>
+              <!-- li décrit une autre action interdite. -->
+              <li>❌ Ramasser un verre tombé</li>
+              <!-- Dernier li décrivant une action interdite. -->
+              <li>❌ Bloquer le plateau contre son corps</li>
+            </ul>
+          </div>
+          <!-- div regroupe le bloc consacré aux sanctions. -->
+          <div class="bloc">
+            <!-- h2 nomme la rubrique des pénalités. -->
+            <h2>Pénalités</h2>
+            <!-- ul regroupe les sanctions dans une liste non numérotée. -->
+            <ul>
+              <!-- li décrit une pénalité ; strong met en évidence la durée. -->
+              <li>Une faute légère (porte de slalom ratée, obstacle contourné incorrectement) ajoute <strong>5 secondes</strong></li>
+              <!-- strong sert à mettre en évidence la durée de la pénalité. -->
+              <li>Utiliser brièvement la deuxième main ajoute <strong>10 secondes</strong></li>
+              <!-- strong met en évidence la sanction la plus importante. -->
+              <li>Une triche importante — tenir durablement le plateau à deux mains, remettre un verre en place, couper volontairement une partie du parcours — entraîne la <strong>disqualification</strong></li>
+            </ul>
+          </div>
+        </div>
 
-     </div>
-</div>
+        <!-- Troisième div de colonne : décrit les étapes du parcours. -->
+        <div class="colonne">
+          <!-- div regroupe le bloc de description des obstacles. -->
+          <div class="bloc">
+            <!-- h2 annonce la rubrique consacrée aux obstacles. -->
+            <h2>Obstacles</h2>
+            <!-- p introduit la liste des étapes du parcours. -->
+            <p>Le parcours devient progressivement plus difficile :</p>
+            <!-- ul crée une liste ; class permet d'appliquer un style propre aux obstacles. -->
+            <ul class="obstacles">
+              <!-- li décrit la première portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>0–40 m — Le Rush :</strong> ligne droite permettant aux participants de prendre de la vitesse. Quelques changements de revêtement rendent déjà le plateau légèrement instable</li>
+              <!-- li décrit la deuxième portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>40–70 m — Le Slalom :</strong> succession de poteaux à contourner alternativement à gauche et à droite. Rater une porte entraîne une pénalité de temps</li>
+              <!-- li décrit la troisième portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>70–100 m — Les Marches :</strong> petite succession de marches à monter puis descendre. Elles sont suffisamment basses pour être franchies en courant, mais chaque impact fait fortement bouger l’eau</li>
+              <!-- li décrit la quatrième portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>100–130 m — La Salle :</strong> passage étroit avec plusieurs virages à 90°. Certaines portes sont juste assez larges pour laisser passer le participant et son plateau</li>
+              <!-- li décrit la cinquième portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>130–160 m — Le Chaos :</strong> zone remplie de distractions : bruits soudains, annonces de restaurant, sonnettes, personnes qui appellent le serveur, etc. Rien ne touche physiquement le joueur, mais l’objectif est de perturber sa concentration</li>
+              <!-- li décrit la sixième portion ; strong met en évidence la distance et son nom. -->
+              <li><strong>160–185 m — Les Vagues :</strong> passage sur plusieurs plateformes légèrement inclinées alternativement vers la gauche et la droite. Le joueur doit compenser avec son bras sans utiliser sa deuxième main</li>
+              <!-- Dernier li : strong met en évidence la distance et le nom de l'étape finale. -->
+              <li><strong>185–200 m — Waterfall :</strong> sprint final en ligne droite. Le participant doit choisir entre sécuriser ses verres ou accélérer pour améliorer son chrono</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer contient les informations affichées en bas de page. -->
     <footer>
+      <!-- p affiche la signature du site sous forme de paragraphe. -->
       <p>site crée par STE SIO</p>
     </footer>
   </body>

@@ -1,29 +1,145 @@
 <!doctype html>
+<!-- Déclare que le document utilise la version moderne de HTML. -->
+<!-- Balise racine du document ; lang indique aux navigateurs et lecteurs d'écran que le contenu est en français. -->
 <html lang="fr">
+  <!-- Contient les informations de configuration, non affichées dans la page. -->
   <head>
+    <!-- meta configure la page ; charset="utf-8" permet d'afficher les accents. -->
     <meta charset="utf-8" />
-    <title>WaterRush Federation</title>
-    <link rel="stylesheet" href="style_contact.css" />
+    <!-- meta viewport adapte l'échelle et la largeur de la page aux écrans mobiles. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- title définit le texte affiché dans l'onglet du navigateur. -->
+    <title>Fédération – Fédération Française de Water Rush</title>
+    <!-- link relie la feuille de style ; rel décrit sa fonction et href son chemin. -->
+    <link rel="stylesheet" href="style_prensentations.css" />
+    <!-- link relie l'icône de l'onglet ; type précise son format et href le fichier image. -->
     <link rel="icon" type="image/x-icon" href="1.png">
   </head>
-  
+
+  <!-- body contient tout le contenu visible de la page. -->
   <body>
-    <header class="header">  
+    <!-- header définit l'en-tête de page. -->
+    <header class="header">
+      <!-- img affiche le logo ; src indique le fichier, alt sa description et class son style CSS. -->
       <img src="1.png" alt="Logo" class="logo">
+      <!-- h1 est le titre principal de la page. -->
       <h1>Fédération Française de Water Rush</h1>
+      <!-- div regroupe les liens de navigation ; class permet leur mise en forme en CSS. -->
       <div class="nav-links">
+        <!-- a crée un lien ; href donne sa destination et class applique le style de bouton. -->
         <a href="index.html" class="btn">Accueil</a>
-        <a href="Presentation.html" class="btn">Presentation</a>
+        <!-- Lien vers la page de présentation du sport. -->
+        <a href="Presentation.html" class="btn">Présentation</a>
+        <!-- Lien vers la page de contact. -->
         <a href="contact.html" class="btn">Contact</a>
+        <!-- Lien vers le calendrier des événements. -->
+        <a href="calendrier.html" class="btn">Calendrier</a>
       </div>
     </header>
 
-    </form>
-      </div>
-    </section>
-</div>
+    <!-- main contient le contenu principal ; class permet d'appliquer sa mise en page CSS. -->
+    <main class="design">
+      <!-- section regroupe les informations de présentation de la fédération. -->
+      <section class="presentation">
+        <!-- div regroupe les blocs de la première colonne. -->
+        <div class="colonne">
+          <!-- div forme un bloc thématique pour l'identité de la fédération. -->
+          <div class="bloc">
+            <!-- h1 affiche le titre principal de ce bloc. -->
+            <h1>La Fédération</h1>
+            <!-- p crée un paragraphe ; strong met la devise en évidence. -->
+            <p><strong>No Split Just Skills</strong></p>
+            <!-- p affiche une phrase d'accroche. -->
+            <p>Un sport unique au monde et français !</p>
+            <!-- p contient la description de la fédération. -->
+            <p>
+              La Fédération Française de Water Rush rassemble les passionnés, les compétiteurs
+              et les curieux autour d’un sport né en France, où l’adresse compte plus que la force.
+            </p>
+          </div>
+          <!-- Deuxième div thématique de la première colonne. -->
+          <div class="bloc">
+            <!-- h2 introduit la rubrique sur le sport. -->
+            <h2>Notre sport</h2>
+            <!-- p décrit le principe du Water Rush. -->
+            <p>
+              Le Water Rush est une discipline d’adresse et de vitesse : les participants
+              parcourent un circuit semé d’obstacles en transportant de l’eau, sans en perdre
+              une goutte. Sa première épreuve, Waterfall, est une course de 200 mètres où chacun
+              se met dans la peau d’un serveur et doit franchir l’arrivée avec le plus de verres possible.
+            </p>
+          </div>
+        </div>
+
+        <!-- div regroupe les blocs de la deuxième colonne. -->
+        <div class="colonne">
+          <!-- div crée un bloc consacré à la philosophie de la fédération. -->
+          <div class="bloc">
+            <!-- h2 introduit le sujet du bloc. -->
+            <h2>Notre philosophie</h2>
+            <!-- p explique l'état d'esprit de la discipline. -->
+            <p>
+              Aller vite ne suffit pas : il faut aller vite sans rien renverser. Le Water Rush
+              récompense la maîtrise, l’équilibre et le sang-froid. Chaque course pose la même
+              question : jusqu’où peut-on aller sans prendre le risque de tout perdre ?
+            </p>
+          </div>
+          <!-- div crée un bloc consacré aux valeurs. -->
+          <div class="bloc">
+            <!-- h2 introduit la liste des valeurs. -->
+            <h2>Nos valeurs</h2>
+            <!-- ul regroupe les valeurs sous forme de liste non numérotée. -->
+            <ul>
+              <!-- li représente une valeur ; strong met son nom en évidence. -->
+              <li><strong>Précision :</strong> chaque geste compte, chaque goutte aussi</li>
+              <!-- Autre li ; strong met le nom de la valeur en évidence. -->
+              <li><strong>Maîtrise de soi :</strong> garder son calme malgré les distractions</li>
+              <!-- Autre li ; strong met le nom de la valeur en évidence. -->
+              <li><strong>Fair-play :</strong> des règles claires, respectées par tous</li>
+              <!-- Autre li ; strong met le nom de la valeur en évidence. -->
+              <li><strong>Convivialité :</strong> un sport ouvert à tous, pour le plaisir de jouer</li>
+              <!-- Dernier li ; strong met le nom de la valeur en évidence. -->
+              <li><strong>Originalité :</strong> un sport qui ne ressemble à aucun autre</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- div regroupe les blocs de la troisième colonne. -->
+        <div class="colonne">
+          <!-- div crée un bloc consacré aux missions. -->
+          <div class="bloc">
+            <!-- h2 introduit la liste des missions. -->
+            <h2>Nos missions</h2>
+            <!-- ul regroupe les missions dans une liste non numérotée. -->
+            <ul>
+              <!-- Chaque li représente une mission de la fédération. -->
+              <li>Promouvoir le Water Rush en France et à l’international</li>
+              <!-- Autre li représentant une mission. -->
+              <li>Organiser des compétitions et désigner les champions de France</li>
+              <!-- Autre li représentant une mission. -->
+              <li>Définir et faire respecter les règles de chaque épreuve</li>
+              <!-- Dernier li représentant une mission. -->
+              <li>Accueillir et accompagner les licenciés, débutants comme confirmés</li>
+            </ul>
+          </div>
+          <!-- div crée un bloc invitant le visiteur à rejoindre la fédération. -->
+          <div class="bloc">
+            <!-- h2 introduit l'invitation. -->
+            <h2>Rejoignez-nous</h2>
+            <!-- p donne les informations pour participer ou contacter la fédération. -->
+            <p>
+              Envie d’essayer, de participer à une compétition ou de créer un club ?
+              Retrouvez les prochaines dates dans le calendrier ou écrivez-nous depuis la page contact.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer contient les informations affichées en bas de page. -->
     <footer>
-      <p>site crée par FFWR</p>
+      <!-- p affiche la signature du site sous forme de paragraphe. -->
+      <p>site crée par STE SIO</p>
     </footer>
   </body>
 </html>

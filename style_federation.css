@@ -1,0 +1,170 @@
+/* Feuille de style historique de présentation : règles générales de page et d'en-tête. */
+
+body {
+  /* Supprime la marge du navigateur, applique le fond et réserve de la place au pied de page. */
+  margin: 0; /* Retire la marge par défaut du navigateur. */
+  background: #f4f4f9; /* Définit la couleur de fond de la page. */
+  padding-bottom: 60px; /* Réserve de l'espace en bas pour le pied de page fixe. */
+}
+
+.header {
+  /* Aligne horizontalement le logo, le titre et les autres éléments de l'en-tête. */
+  margin: 0; /* Retire les marges autour de l'en-tête. */
+  padding: 20px; /* Ajoute un espace intérieur de 20 px. */
+  background-color: #ffffff; /* Définit le fond blanc de l'en-tête. */
+  height: 60px; /* Fixe la hauteur de la zone de contenu de l'en-tête. */
+  
+  display: flex; /* Aligne les éléments de l'en-tête avec Flexbox. */
+  align-items: center; /* Centre les éléments verticalement. */
+  justify-content: space-between; /* Répartit les éléments avec de l'espace entre eux. */
+
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre sous l'en-tête. */
+}
+
+.header .logo {
+  /* Fixe la taille du logo et ajuste sa position dans l'en-tête. */
+  width: 200px; /* Fixe la largeur du logo à 200 px. */
+  height: 200px; /* Fixe sa hauteur à 200 px. */
+  margin-right: 10px; /* Ajoute un espace à droite du logo. */
+  margin-top: 35px; /* Décale le logo de 35 px vers le bas. */
+}
+
+.header h1 {
+  /* Centre et met en forme le titre de l'en-tête. */
+  margin: 0; /* Retire les marges par défaut du titre. */
+  font-size: 24px; /* Définit la taille du titre. */
+  color: #333; /* Colore le titre en gris foncé. */
+  text-align: center; /* Centre le texte du titre. */
+}
+
+.nav-links {
+  /* Affiche les liens de navigation côte à côte. */
+  display: flex; /* Place les liens de navigation côte à côte. */
+  gap: 10px; /* Ajoute 10 px entre les liens. */
+}
+
+.btn {
+  /* Présente les liens de navigation comme des boutons. */
+  display: inline-block; /* Permet de régler la taille du lien comme un bouton. */
+  padding: 10px 18px; /* Ajoute de l'espace intérieur autour du texte. */
+  background-color: #000091; /* Définit le fond bleu du bouton. */
+  color: white; /* Affiche le texte en blanc. */
+  font-size: 20px; /* Définit la taille du texte. */
+  font-weight: bold; /* Met le texte en gras. */
+  text-decoration: none; /* Retire le soulignement du lien. */
+  border-radius: 4px; /* Arrondit les coins du bouton. */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère sous le bouton. */
+  transition: 0.2s; /* Anime les changements visuels sur 0,2 seconde. */
+}
+
+.btn:hover {
+  /* Change l'apparence des liens lorsque le pointeur les survole. */
+  background-color: #1212b5; /* Éclaircit le fond au survol. */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au survol. */
+}
+
+footer {
+  /* Fixe le pied de page en bas de la fenêtre et définit ses couleurs. */
+  position: fixed; /* Fixe le pied de page par rapport à la fenêtre. */
+  bottom: 0; /* Le place au bord inférieur de la fenêtre. */
+  left: 0; /* L'aligne au bord gauche. */
+  width: 100%; /* Étend le pied de page sur toute la largeur. */
+  padding: 15px 0; /* Ajoute 15 px d'espace en haut et en bas. */
+  background-color: #000091; /* Définit le fond bleu du pied de page. */
+  color: white; /* Affiche le texte en blanc. */
+  text-align: center; /* Centre le texte horizontalement. */
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au-dessus du pied de page. */
+}
+
+footer p {
+  /* Supprime la marge par défaut du texte du pied de page. */
+  margin: 0; /* Retire la marge par défaut du paragraphe. */
+}
+
+.video {
+  /* Centre horizontalement le contenu vidéo. */
+  display: flex; /* Active Flexbox pour organiser le contenu vidéo. */
+  justify-content: center; /* Centre le contenu horizontalement. */
+}
+
+
+
+.federation,p {
+  /* Définit une taille de texte pour les éléments correspondant à ces sélecteurs. */
+    font-size: 20px; /* Définit la taille du texte correspondant à ces sélecteurs. */
+}
+
+.contact,strong {
+    /* Définit la taille, l'espace et l'alignement des éléments correspondant à ces sélecteurs. */
+    font-size: 30px; /* Définit la taille du texte correspondant à ces sélecteurs. */
+    margin-bottom: 20px; /* Ajoute 20 px sous les éléments correspondants. */
+    text-align: center; /* Centre le texte des éléments correspondants. */
+}
+
+contact,h1 {
+    /* Définit la taille et l'alignement des éléments correspondant à ces sélecteurs. */
+    font-size: 32px; /* Définit la taille du texte correspondant à ces sélecteurs. */
+    margin-bottom: 20px; /* Ajoute 20 px sous les éléments correspondants. */
+    text-align: center; /* Centre le texte des éléments correspondants. */
+    
+}
+
+form {
+  /* Centre le formulaire et définit sa largeur, son espacement et sa bordure. */
+  margin: 0 auto; /* Centre le formulaire horizontalement. */
+  width: 400px; /* Fixe la largeur du formulaire à 400 px. */
+  padding: 1em; /* Ajoute un espace intérieur proportionnel à la taille du texte. */
+  border: 1px solid #ccc; /* Ajoute une bordure grise fine. */
+  border-radius: 1em; /* Arrondit les coins du formulaire. */
+}
+
+ul {
+  /* Supprime les puces et l'indentation par défaut des listes. */
+  list-style: none; /* Retire les puces de la liste. */
+  padding: 0; /* Retire l'espace intérieur par défaut. */
+  margin: 0; /* Retire les marges par défaut. */
+}
+
+form li + li {
+  /* Ajoute un espace au-dessus de chaque élément de formulaire après le premier. */
+  margin-top: 1em; /* Ajoute un espace au-dessus de chaque élément après le premier. */
+}
+
+label {
+  /* Aligne les libellés à droite dans une colonne de largeur fixe. */
+  display: inline-block; /* Permet de fixer la largeur du libellé. */
+  width: 90px; /* Réserve 90 px pour chaque libellé. */
+  text-align: right; /* Aligne le texte du libellé à droite. */
+}
+
+input,
+textarea {
+  /* Uniformise la taille et la bordure des champs de saisie. */
+  font: 1em sans-serif; /* Utilise une police sans empattement à la taille courante. */
+  width: 300px; /* Fixe la largeur des champs à 300 px. */
+  box-sizing: border-box; /* Inclut bordure et remplissage dans la largeur annoncée. */
+  border: 1px solid #999; /* Ajoute une bordure grise autour des champs. */
+}
+
+input:focus,
+textarea:focus {
+  /* Rend la bordure du champ actif plus visible. */
+  border-color: #000; /* Noircit la bordure du champ sélectionné. */
+}
+
+textarea {
+  /* Définit la hauteur initiale et autorise le redimensionnement vertical. */
+  vertical-align: top; /* Aligne le haut de la zone de texte avec son libellé. */
+  height: 5em; /* Définit la hauteur initiale de la zone de texte. */
+  resize: vertical; /* Autorise le redimensionnement vertical uniquement. */
+}
+
+.button {
+  /* Aligne le bouton d'envoi avec les champs du formulaire. */
+  padding-left: 90px; /* Décale le bouton sous les champs, après la colonne des libellés. */
+}
+
+button {
+  /* Ajoute une petite marge avant le bouton. */
+  margin-left: 0.5em; /* Ajoute une petite marge à gauche du bouton. */
+}

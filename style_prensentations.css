@@ -1,0 +1,173 @@
+/* =========================
+   STYLES GÉNÉRAUX
+========================= */
+
+html {
+  /* Sert de référence pour faire occuper toute la hauteur de l'écran au body. */
+  height: 100%; /* Permet au body d'occuper toute la hauteur de la fenêtre. */
+}
+
+body {
+  /* Organise la page en colonne et définit le fond, la police et la taille du texte. */
+  height: 100%; /* Étend la page sur toute la hauteur définie par html. */
+  margin: 0; /* Retire la marge par défaut du navigateur. */
+  display: flex; /* Active Flexbox pour organiser les grandes zones de la page. */
+  flex-direction: column; /* Empile l'en-tête, le contenu et le pied de page. */
+  background: #f4f4f9; /* Définit la couleur de fond. */
+  font-family: Arial, Helvetica, sans-serif; /* Choisit la police et des polices de secours. */
+  font-size: clamp(11px, 1.6vh, 17px); /* Adapte la taille du texte avec un minimum de 11 px et un maximum de 17 px. */
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  /* Conserve l'en-tête à sa taille et aligne ses éléments horizontalement. */
+  flex-shrink: 0; /* Empêche l'en-tête de rétrécir. */
+  display: flex; /* Aligne les éléments de l'en-tête avec Flexbox. */
+  align-items: center; /* Centre les éléments verticalement. */
+  justify-content: space-between; /* Répartit les éléments avec de l'espace entre eux. */
+  gap: 30px; /* Ajoute au moins 30 px entre les éléments. */
+  padding: 10px 40px; /* Ajoute 10 px en haut/bas et 40 px sur les côtés. */
+  background-color: #ffffff; /* Définit le fond blanc de l'en-tête. */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre sous l'en-tête. */
+}
+
+.header .logo {
+  /* Limite la hauteur du logo sans changer ses proportions. */
+  height: 80px; /* Fixe la hauteur du logo. */
+  width: auto; /* Calcule la largeur pour conserver ses proportions. */
+  object-fit: contain; /* Affiche l'image entière sans la déformer. */
+}
+
+.header h1 {
+  /* Centre et met en forme le titre principal. */
+  margin: 0; /* Retire les marges par défaut du titre. */
+  font-size: 28px; /* Définit la taille du titre. */
+  color: #333; /* Colore le titre en gris foncé. */
+  text-align: center; /* Centre le texte du titre. */
+}
+
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.nav-links {
+  /* Place les liens de navigation côte à côte. */
+  display: flex; /* Place les liens de navigation sur une ligne. */
+  gap: 10px; /* Ajoute 10 px entre les liens. */
+}
+
+.btn {
+  /* Donne aux liens l'apparence de boutons. */
+  display: inline-block; /* Permet de régler les dimensions du lien comme un bouton. */
+  padding: 10px 18px; /* Ajoute un espace intérieur autour du texte. */
+  background-color: #000091; /* Définit le fond bleu du bouton. */
+  color: white; /* Affiche le texte en blanc. */
+  font-size: 18px; /* Définit la taille du texte. */
+  font-weight: bold; /* Met le texte en gras. */
+  text-decoration: none; /* Retire le soulignement du lien. */
+  border-radius: 4px; /* Arrondit les coins du bouton. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre sous le bouton. */
+  transition: 0.2s; /* Anime les changements visuels sur 0,2 seconde. */
+}
+
+.btn:hover {
+  /* Modifie l'apparence des boutons au survol. */
+  background-color: #1212b5; /* Éclaircit le fond au survol. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Accentue l'ombre au survol. */
+}
+
+
+/* =========================
+   CONTENU (3 colonnes, sans scroll)
+========================= */
+
+.design {
+  /* Utilise l'espace disponible, ajoute des marges et permet le défilement si nécessaire. */
+  flex: 1; /* Occupe l'espace disponible entre l'en-tête et le pied de page. */
+  min-height: 0; /* Autorise le contenu à rétrécir dans le conteneur flexible. */
+  overflow: auto; /* Ajoute un défilement si le contenu dépasse l'espace disponible. */
+  padding: 15px 30px; /* Ajoute un espace intérieur autour du contenu. */
+  text-align: center; /* Centre le texte des blocs. */
+}
+
+.presentation {
+  /* Crée trois colonnes de même largeur et espace leur contenu. */
+  min-height: 100%; /* Étend la présentation sur toute la hauteur disponible. */
+  display: grid; /* Utilise CSS Grid pour organiser les colonnes. */
+  grid-template-columns: repeat(3, 1fr); /* Crée trois colonnes de largeur égale. */
+  align-items: start; /* Aligne les colonnes en haut de la grille. */
+  gap: 20px; /* Ajoute 20 px entre les colonnes. */
+}
+
+.colonne {
+  /* Empile les blocs d'une colonne avec un espace régulier. */
+  display: flex; /* Active Flexbox pour placer les blocs de la colonne. */
+  flex-direction: column; /* Empile les blocs verticalement. */
+  gap: 15px; /* Ajoute 15 px entre les blocs. */
+}
+
+.bloc {
+  /* Présente chaque sujet dans une carte blanche avec coins arrondis et ombre. */
+  padding: 12px 18px; /* Ajoute 12 px en haut/bas et 18 px sur les côtés. */
+  background-color: white; /* Donne au bloc un fond blanc. */
+  border-radius: 8px; /* Arrondit les coins du bloc. */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Ajoute une ombre autour du bloc. */
+}
+
+.bloc h1 {
+  /* Met en forme les titres principaux des blocs. */
+  margin: 0 0 8px; /* Retire les marges sauf 8 px sous le titre. */
+  font-size: 2em; /* Affiche le titre à deux fois la taille de texte courante. */
+  color: #333; /* Colore le titre en gris foncé. */
+}
+
+.bloc h2 {
+  /* Met en forme les sous-titres des blocs. */
+  margin: 0 0 8px; /* Retire les marges sauf 8 px sous le sous-titre. */
+  font-size: 1.25em; /* Affiche le sous-titre à 1,25 fois la taille courante. */
+  color: #333; /* Colore le sous-titre en gris foncé. */
+}
+
+.bloc p {
+  /* Espace et colore les paragraphes des blocs. */
+  margin: 0 0 8px; /* Retire les marges sauf 8 px sous le paragraphe. */
+  color: #333; /* Colore le paragraphe en gris foncé. */
+}
+
+.presentation ul {
+  /* Retire les puces et l'indentation des listes de présentation. */
+  margin: 0; /* Retire les marges par défaut de la liste. */
+  padding-left: 0; /* Retire son indentation à gauche. */
+  list-style: none; /* Retire les puces de la liste. */
+}
+
+.presentation li {
+  /* Espace et colore les éléments des listes. */
+  margin-bottom: 6px; /* Ajoute un espace sous chaque élément de la liste. */
+  color: #333; /* Colore le texte en gris foncé. */
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  /* Conserve le pied de page à sa taille et définit son apparence. */
+  flex-shrink: 0; /* Empêche le pied de page de rétrécir. */
+  padding: 15px 0; /* Ajoute 15 px d'espace en haut et en bas. */
+  background-color: #000091; /* Définit le fond bleu du pied de page. */
+  color: white; /* Affiche le texte en blanc. */
+  text-align: center; /* Centre le texte du pied de page. */
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au-dessus du pied de page. */
+}
+
+footer p {
+  /* Supprime la marge par défaut du texte du pied de page. */
+  margin: 0; /* Retire la marge par défaut du paragraphe. */
+}

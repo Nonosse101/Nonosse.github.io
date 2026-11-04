@@ -3,9 +3,12 @@
 ========================= */
 
 body {
-  margin: 0;
-  padding-bottom: 60px;
-  background: #f4f4f9;
+  /* Supprime les marges par défaut et réserve de l'espace au pied de page fixe. */
+  margin: 0; /* Retire la marge ajoutée par défaut par le navigateur. */
+  padding-bottom: 70px; /* Laisse 70 px en bas pour ne pas cacher le pied de page fixe. */
+  /* Définit la couleur de fond et les polices de base du site. */
+  background: #f4f4f9; /* Définit la couleur de fond de la page. */
+  font-family: Arial, Helvetica, sans-serif; /* Choisit la police, avec des polices de secours. */
 }
 
 
@@ -14,30 +17,29 @@ body {
 ========================= */
 
 .header {
-  height: 60px;
-  margin: 0;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #ffffff;
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+  /* Aligne le logo, le titre et la navigation sur une même ligne. */
+  display: flex; /* Place les éléments de l'en-tête dans une mise en page flexible. */
+  align-items: center; /* Centre les éléments verticalement. */
+  justify-content: space-between; /* Répartit les éléments avec de l'espace entre eux. */
+  gap: 30px; /* Ajoute au moins 30 px entre les éléments. */
+  padding: 10px 40px; /* Ajoute 10 px en haut/bas et 40 px à gauche/droite. */
+  background-color: #ffffff; /* Met un fond blanc derrière l'en-tête. */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre sous l'en-tête. */
 }
 
 .header .logo {
-  width: 200px;
-  height: 200px;
-  margin-top: 35px;
-  margin-right: 10px;
-
-  object-fit: contain;
+  /* Limite la hauteur du logo sans déformer ses proportions. */
+  height: 90px; /* Fixe la hauteur du logo à 90 px. */
+  width: auto; /* Calcule la largeur pour conserver les proportions du logo. */
+  object-fit: contain; /* Affiche l'image entière sans la déformer. */
 }
 
 .header h1 {
-  margin: 0;
-
-  font-size: 24px;
-  color: #333;
+  /* Centre visuellement le titre et définit sa taille et sa couleur. */
+  margin: 0; /* Retire les marges par défaut du titre. */
+  font-size: 28px; /* Définit la taille du texte en pixels. */
+  color: #333; /* Définit la couleur du texte en gris foncé. */
+  text-align: center; /* Centre le texte dans son espace. */
 }
 
 
@@ -46,30 +48,29 @@ body {
 ========================= */
 
 .nav-links {
-  display: flex;
-  gap: 10px;
+  /* Affiche les liens de navigation côte à côte avec un espacement régulier. */
+  display: flex; /* Aligne les liens de navigation sur une ligne. */
+  gap: 10px; /* Ajoute 10 px entre les liens. */
 }
 
 .btn {
-  display: inline-block;
-  padding: 10px 18px;
-
-  background-color: #000091;
-  color: white;
-
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-
-  border-radius: 4px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-
-  transition: 0.2s;
+  /* Présente chaque lien de navigation sous la forme d'un bouton. */
+  display: inline-block; /* Permet de régler la taille et les marges du lien comme un bloc. */
+  padding: 10px 18px; /* Ajoute 10 px en haut/bas et 18 px sur les côtés. */
+  background-color: #000091; /* Définit le fond bleu du bouton. */
+  color: white; /* Affiche le texte en blanc. */
+  font-size: 18px; /* Définit la taille du texte. */
+  font-weight: bold; /* Met le texte en gras. */
+  text-decoration: none; /* Retire le soulignement du lien. */
+  border-radius: 4px; /* Arrondit légèrement les coins du bouton. */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère sous le bouton. */
+  transition: 0.2s; /* Anime les changements visuels sur 0,2 seconde. */
 }
 
 .btn:hover {
-  background-color: #1212b5;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+  /* Change l'apparence du bouton quand le pointeur passe dessus. */
+  background-color: #1212b5; /* Éclaircit le fond du bouton au survol. */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Rend l'ombre plus visible au survol. */
 }
 
 
@@ -78,55 +79,55 @@ body {
 ========================= */
 
 .actualites {
-  padding: 20px;
-  text-align: center;
+  /* Espace et centre la section des actualités. */
+  padding: 30px 40px; /* Ajoute un espace intérieur autour des actualités. */
+  text-align: center; /* Centre le contenu de la section. */
 }
 
 .actualites h2 {
-  margin-bottom: 20px;
-
-  color: #333;
-  font-size: 30px;
+  /* Met en forme le titre de la section des actualités. */
+  margin: 0 0 25px; /* Retire les marges sauf 25 px sous le titre. */
+  font-size: 30px; /* Définit la taille du titre. */
+  color: #333; /* Colore le titre en gris foncé. */
 }
 
 .actualites-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: stretch;
-  gap: 20px;
+  /* Répartit les cartes et autorise leur retour à la ligne si nécessaire. */
+  display: flex; /* Dispose les cartes avec le modèle flexible. */
+  flex-wrap: wrap; /* Autorise les cartes à passer à la ligne si nécessaire. */
+  justify-content: center; /* Centre les cartes horizontalement. */
+  align-items: stretch; /* Étire les cartes pour qu'elles aient une hauteur cohérente. */
+  gap: 25px; /* Ajoute 25 px entre les cartes. */
 }
 
 .actualite {
-  width: 250px;
-
-  display: flex;
-  flex-direction: column;
-
-  background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
-
-  box-shadow: 0 4px 10px rgba(41, 40, 40, 0.479);
+  /* Forme une carte verticale avec fond blanc, coins arrondis et ombre. */
+  width: 280px; /* Fixe la largeur de chaque carte à 280 px. */
+  display: flex; /* Utilise une mise en page flexible dans la carte. */
+  flex-direction: column; /* Empile image, titre et texte verticalement. */
+  background-color: white; /* Définit le fond blanc de la carte. */
+  border-radius: 8px; /* Arrondit les coins de la carte. */
+  overflow: hidden; /* Cache ce qui dépasse des coins arrondis. */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25); /* Ajoute une ombre autour de la carte. */
 }
 
 .actualite img {
-  width: 100%;
-  height: 150px;
-
-  object-fit: cover;
+  /* Remplit la largeur de la carte et recadre l'image dans une zone fixe. */
+  width: 100%; /* Étire l'image sur toute la largeur de la carte. */
+  height: 170px; /* Fixe la hauteur de la zone d'image. */
+  object-fit: cover; /* Remplit la zone en recadrant l'image si besoin. */
 }
 
 .actualite h3 {
-  margin: 15px 10px 5px 10px;
-
-  color: #007bff;
+  /* Espace et colore le titre de chaque actualité. */
+  margin: 15px 10px 5px; /* Ajoute des marges autour du titre de la carte. */
+  color: #007bff; /* Colore le titre en bleu. */
 }
 
 .actualite p {
-  margin: 0 10px 15px 10px;
-
-  color: #555;
+  /* Définit l'espacement et la couleur du texte de chaque actualité. */
+  margin: 0 10px 15px; /* Ajoute des marges autour du texte de la carte. */
+  color: #555; /* Colore le texte en gris. */
 }
 
 
@@ -135,22 +136,117 @@ body {
 ========================= */
 
 .video {
-  display: flex;
-  justify-content: center;
+  /* Centre la vidéo horizontalement et lui ajoute une marge intérieure. */
+  display: flex; /* Active la mise en page flexible pour centrer la vidéo. */
+  justify-content: center; /* Centre la vidéo horizontalement. */
+  padding: 20px 0 30px; /* Ajoute 20 px en haut et 30 px en bas. */
 }
 
+
+/* =========================
+   PAGES TEXTE (Présentation / Waterfall)
+========================= */
+
+.design {
+  /* Limite la largeur des pages de contenu et les centre à l'écran. */
+  max-width: 1000px; /* Empêche le contenu de devenir trop large. */
+  margin: 0 auto; /* Centre le bloc horizontalement. */
+  padding: 30px 40px; /* Ajoute un espace intérieur autour du contenu. */
+}
+
+.presentation {
+  /* Centre le texte des pages de présentation. */
+  text-align: center; /* Centre le texte de la présentation. */
+}
+
+.presentation ul {
+  /* Retire les puces et l'indentation des listes de présentation. */
+  list-style: none; /* Retire les puces de la liste. */
+  padding-left: 0; /* Retire l'indentation à gauche de la liste. */
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
 footer {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 0;
-  background-color: #000091;
-  color: white;
-  text-align: center;
-  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2);
+  /* Maintient le pied de page en bas de la fenêtre sur les pages concernées. */
+  position: fixed; /* Fixe le pied de page par rapport à la fenêtre. */
+  bottom: 0; /* Place le pied de page au bord inférieur de la fenêtre. */
+  left: 0; /* Aligne son bord gauche avec celui de la fenêtre. */
+  width: 100%; /* Étend le pied de page sur toute la largeur. */
+  padding: 15px 0; /* Ajoute 15 px d'espace en haut et en bas. */
+  background-color: #000091; /* Définit son fond bleu. */
+  color: white; /* Affiche le texte en blanc. */
+  text-align: center; /* Centre le texte du pied de page. */
+  box-shadow: 0 -3px 10px rgba(0, 0, 0, 0.2); /* Ajoute une ombre au-dessus du pied de page. */
 }
 
 footer p {
-  margin: 0;
+  /* Évite l'espace vertical ajouté par défaut autour du texte du pied de page. */
+  margin: 0; /* Retire la marge par défaut du paragraphe. */
+}
+
+
+/* =========================
+   PAGE D'ACCUEIL (sans scroll)
+========================= */
+
+body.accueil {
+  /* Organise l'accueil sur la hauteur de la fenêtre, sans défilement. */
+  height: 100vh; /* Donne au corps la hauteur de la fenêtre visible. */
+  padding-bottom: 0; /* Annule l'espace réservé au pied de page fixe. */
+  overflow: hidden; /* Masque le défilement sur la page d'accueil. */
+  display: flex; /* Organise la page avec le modèle flexible. */
+  flex-direction: column; /* Empile l'en-tête, le contenu et le pied de page. */
+}
+
+body.accueil .header,
+body.accueil footer {
+  /* Empêche l'en-tête et le pied de page de rétrécir dans la mise en page flexible. */
+  flex-shrink: 0; /* Empêche l'en-tête et le pied de page de rétrécir. */
+}
+
+body.accueil footer {
+  /* Replace le pied de page dans le flux normal sur l'accueil. */
+  position: static; /* Replace le pied de page dans le flux normal de la page. */
+}
+
+body.accueil main {
+  /* Fait occuper au contenu principal l'espace restant de la fenêtre. */
+  flex: 1; /* Occupe l'espace restant entre l'en-tête et le pied de page. */
+  min-height: 0; /* Autorise le contenu à rétrécir dans le conteneur flexible. */
+  display: flex; /* Organise le contenu principal avec Flexbox. */
+  flex-direction: column; /* Empile les actualités et la vidéo. */
+}
+
+body.accueil .actualites {
+  /* Réduit les marges de la section actualités sur la page d'accueil. */
+  padding: 15px 40px 5px; /* Réduit les espaces autour des actualités sur l'accueil. */
+}
+
+body.accueil .actualites h2 {
+  /* Réduit l'espace et la taille du titre pour conserver la vidéo visible. */
+  margin-bottom: 12px; /* Réduit l'espace sous le titre. */
+  font-size: 26px; /* Réduit la taille du titre sur l'accueil. */
+}
+
+body.accueil .actualite img {
+  /* Réduit la hauteur des images des cartes sur l'accueil. */
+  height: 130px; /* Réduit la hauteur des images des cartes sur l'accueil. */
+}
+
+body.accueil .video {
+  /* Permet à la zone vidéo de prendre l'espace restant sans déborder. */
+  flex: 1; /* Utilise l'espace vertical restant pour la vidéo. */
+  min-height: 0; /* Permet à la zone vidéo de rétrécir si l'écran est bas. */
+  padding: 10px 0 15px; /* Ajoute un espace autour de la vidéo. */
+}
+
+body.accueil .video video {
+  /* Adapte la vidéo à la hauteur disponible sans dépasser la largeur de l'écran. */
+  height: 100%; /* Adapte la hauteur de la vidéo à son conteneur. */
+  width: auto; /* Calcule la largeur pour préserver le format de la vidéo. */
+  max-width: 100%; /* Empêche la vidéo de dépasser la largeur de l'écran. */
 }
